@@ -9,7 +9,7 @@ concurrency:
 
 jobs:
   validate:
-    name: validate
+    name: Terraform validate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.0.2
@@ -24,6 +24,6 @@ jobs:
       - name: Terraform init and create workspace
         run: terraform init
 
-      - name: Validate Terraform code
+      - name: Terraform validate
         run: terraform validate
 
