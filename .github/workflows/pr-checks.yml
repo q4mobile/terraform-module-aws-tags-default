@@ -21,7 +21,7 @@ jobs:
           terraform_version: 1.1.9
           terraform_wrapper: false
 
-      - name: Terraform init and create workspace
+      - name: Terraform init
         run: terraform init
 
       - name: Terraform validate
