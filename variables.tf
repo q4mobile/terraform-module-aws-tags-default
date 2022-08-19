@@ -1,0 +1,12 @@
+variable "aws_region"             {}
+variable "date_format"            {}
+variable "provisioner"            {}
+variable "contact"                {}
+variable "environment"            {}
+variable "control_repository_url" {}
+variable "module_repository_url"  {}
+variable "name"                   {}
+variable "role"                   {}
+variable "product"                {}
+variable "description"            {}
+variable "additional_tags"        {}
