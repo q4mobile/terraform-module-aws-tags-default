@@ -26,10 +26,8 @@ module "tags" {
 | product | The role of the resource. Highly recommended. | `string` | n/a | yes |
 | role | The role of the resource. Highly recommended. | `string` | n/a | yes |
 | additional\_tags | Additional tags to add. | `map(string)` | `{}` | no |
-| contact | Who to contact. | `string` | `"devops@trulioo.com"` | no |
+| contact | Who to contact. | `string` | `""` | no |
 | date\_format | The default date format. | `string` | `"YYYY-DD-MM hh:mm:ss ZZZZZ"` | no |
-| expirary\_month\_format | The default format the lambda function uses to delete resources. | `string` | `"YYYY-MM"` | no |
-| expirary\_to\_add | The time in the future when resources will be deleted. | `string` | `"730h"` | no |
 | provisioner | The name of the provisioner (terraform, console, cloudformation, etc). | `string` | `"terraform"` | no |
 
 ## Outputs

@@ -4,11 +4,11 @@ variable "aws_region" {
 }
 variable "date_format" {
   type    = string
-  default = "DD MMM YYYY hh:mm ZZZ"
+  default = "YYYY-DD-MM hh:mm:ss ZZZZZ"
 }
 variable "provisioner" {
   type    = string
-  default = ""
+  default = "terraform"
 }
 variable "contact" {
   type    = string
@@ -24,11 +24,11 @@ variable "control_repository_url" {
 }
 variable "module_repository_url" {
   type    = string
-  default = "git@github.com:q4mobile/terraform-module-aws-tags-default.git"
+  default = ""
 }
 variable "name" {
   type    = string
-  default = "terraform-module-aws-tags-default"
+  default = ""
 }
 variable "role" {
   type    = string
@@ -43,6 +43,6 @@ variable "description" {
   default = ""
 }
 variable "additional_tags" {
-  type    = map
-  default = null
+  type    = map(string)
+  default = {}
 }
