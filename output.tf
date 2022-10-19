@@ -1,7 +1,8 @@
 output "tags" {
   value = merge({
     DateCreated         = formatdate(var.date_format, time_static.date_created.rfc3339)
-    Owner               = data.aws_caller_identity.current_user.arn
+    #Removes the assumed IAM role (everything after the id) because the assumed role is unique for every deployment.
+    Owner               = regexall(".*${data.aws_caller_identity.current_user.id}", data.aws_caller_identity.current_user.arn)[0]
     Provisioner         = var.provisioner
     Contact             = var.contact
     Environment         = var.environment
