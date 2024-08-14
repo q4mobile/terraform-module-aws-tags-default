@@ -10,7 +10,7 @@ output "tags" {
     Name                = var.name
     Product             = var.product
     SubProduct          = var.sub_product
-    ops-tier            = var.ops_tier
+    ops_tier            = var.ops_tier
     ops-product         = var.sub_product
     Description         = var.description
     },
