@@ -7,36 +7,37 @@ variable "provisioner" {
   default = "terraform"
 }
 variable "contact" {
-  type    = string
+  type = string
 }
 variable "environment" {
-  type    = string
+  type = string
 }
 variable "control_repository_url" {
-  type    = string
+  type = string
 }
 variable "module_repository_url" {
-  type    = string
+  type = string
 }
 variable "name" {
-  type    = string
+  type = string
 }
 variable "product" {
-  type    = string
+  type = string
 }
 variable "sub_product" {
-  type    = string
+  type = string
 }
 variable "description" {
-  type    = string
+  type = string
 }
 variable "additional_tags" {
   type    = map(string)
   default = {}
 }
 variable "owner" {
-  type    = string
+  type = string
 }
-variable "ops_tier" {
-  type    = string
-}
+# variable "ops_tier" {
+#   type    = string
+# }
+
