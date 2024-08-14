@@ -37,7 +37,7 @@ variable "additional_tags" {
 variable "owner" {
   type = string
 }
-# variable "ops_tier" {
-#   type    = string
-# }
+variable "ops_tier" {
+  type = string
+}
 
