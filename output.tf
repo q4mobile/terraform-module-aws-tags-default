@@ -13,6 +13,7 @@ output "tags" {
     ops-tier            = var.ops_tier
     ops-product         = var.sub_product
     Description         = var.description
+    Region              = var.region
     },
   var.additional_tags)
   description = "A map of the generated tags."
