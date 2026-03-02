@@ -40,4 +40,6 @@ variable "owner" {
 variable "ops_tier" {
   type = string
 }
-
+variable "region" {
+  type = string
+}

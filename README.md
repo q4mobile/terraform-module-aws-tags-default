@@ -55,6 +55,8 @@ No modules.
 | <a name="input_date_format"></a> [date\_format](#input\_date\_format) | n/a | `string` | `"YYYY-DD-MM hh:mm:ss ZZZZZ"` | no |
 | <a name="input_provisioner"></a> [provisioner](#input\_provisioner) | n/a | `string` | `"terraform"` | no |
 | <a name="ops_tier"></a> [ops_tier](#ops\_tier) | n/a | `string` | n/a | no |
+| <a name="region"></a> [region](#input\region) | n/a | `string` | n/a | no |
+
 
 ## Outputs
 
